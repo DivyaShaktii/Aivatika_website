@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    navProduct: "Products ▾", navHcBot: "Healthcare Bot", navFeature: "Features ▾", navSolution: "Solutions", navContact: "Contact", btnContact: "Contact US 💬",
+    navProduct: "Products ▾", navHcBot: "ChatBot.aivatika.com", navFeature: "Features ▾", navSolution: "Solutions", navContact: "Contact", btnContact: "Contact US 💬",
     heroTitle: "Innovate<br/><em>Without</em><br/>Limits", heroSub: "AIVATIKA engineers intelligent voice and chat AI systems built for real business impact — agents that work around the clock.", btnStart: "Get Started ↗",
     stat1: "Requests Handled", stat2: "Happy Clients", stat3: "BRAND'S DIGITAL<br/>IDENTITY", explore: "Explore more ⓘ",
     s1Eyebrow: "What We Build", s1Title: "AI That Works<br/>While You Sleep", s1Sub: "Production-grade agents for voice, chat & automation.",
