@@ -171,6 +171,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:38px 52px
 .r{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
 .r.v{opacity:1;transform:translateY(0)}
 @media (max-width: 768px) {
+  .hero-light { flex-direction: column !important; padding: 120px 20px 60px !important; gap: 40px !important; text-align: center; }
+  .hero-light .hero-left { max-width: 100% !important; }
+  .hero-light .hero-right { width: 100% !important; margin-left: 0 !important; }
+  .how-it-works-cards { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .compact-card { padding: 30px 20px !important; }
+  .cta-box { margin: 0 20px 40px !important; padding: 40px 20px !important; }
+
   nav { padding: 0 20px; }
   .nav-links, .btn-contact, .chips, .profit-card, .brand-card { display: none; }
   .hero { height: auto; min-height: auto; padding-bottom: 60px; }
