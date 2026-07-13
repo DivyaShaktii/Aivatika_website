@@ -37,4 +37,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    // Smart Header
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            // Past the top - strictly hide header
+            nav.classList.add('nav-hidden');
+            nav.classList.remove('nav-solid');
+        } else {
+            // At top - transparent header visible
+            nav.classList.remove('nav-hidden');
+            nav.classList.remove('nav-solid');
+        }
+    });
+
+    window.addEventListener('mousemove', (e) => {
+        if (window.scrollY > 100) {
+            if (e.clientY <= 80) {
+                // Show header if mouse is at the top of the screen
+                nav.classList.remove('nav-hidden');
+                nav.classList.add('nav-solid');
+            } else {
+                // Re-hide header when mouse leaves the top
+                nav.classList.add('nav-hidden');
+                nav.classList.remove('nav-solid');
+            }
+        }
+    });
 });

@@ -126,12 +126,10 @@ function changeLanguage(lang) {
   if (!t) return;
 
   // Nav
-  const links = document.querySelectorAll('.nav-links li a');
-  if(links.length >= 4) { 
+  const links = document.querySelectorAll('.nav-links > li > a');
+  if(links.length >= 2) { 
     links[0].innerText = t.navProduct; 
-    links[1].innerText = t.navHcBot; 
-    links[2].innerText = t.navFeature;
-    links[3].innerText = t.navSolution;
+    links[1].innerText = t.navSolution; 
   }
   document.querySelector('.btn-contact').innerText = t.btnContact;
 

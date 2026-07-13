@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>AIVATIKA — Intelligent AI Products. Real Business Impact.</title>
+<title>AIVATIKA — case studies</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#050714;
+  --text:#fff;
+  --text-light:#7a8599;
   --cyan:#00d4ff;
-  --cyan2:#22e5ff;
   --pink:#ff2d78;
-  --pink2:#ff6bab;
   --purple:#7c3aed;
-  --purple2:#a855f7;
   --w:#fff;
   --g:#7a8599;
+  --border:rgba(255,255,255,0.1);
 }
-body{background:var(--bg);color:var(--w);font-family:'Inter',sans-serif;overflow-x:hidden}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
 
 /* NAV */
 nav{position:fixed;top:16px;left:50%;transform:translateY(0) translateX(-50%);z-index:999;height:66px;width:calc(100% - 40px);max-width:1200px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:transparent;border-radius:16px;opacity:1;transition:opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;}
@@ -29,16 +29,16 @@ nav.nav-hidden { transform: translateY(-150%) translateX(-50%); opacity: 0; poin
 nav:hover .logo, nav.nav-solid .logo { color: #0a2540; }
 .logo b{background:linear-gradient(90deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .nav-links{display:flex;gap:34px;list-style:none}
-.nav-links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:#fff}
-nav:hover .nav-links a, nav.nav-solid .nav-links a { color: #425466; }
-nav:hover .nav-links a:hover, nav.nav-solid .nav-links a:hover { color: #0a2540; }
+.nav-links a{font-size:14px;font-weight:600;color:var(--text);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--purple)}
+nav:hover .nav-links a, nav.nav-solid .nav-links a { color: #0a2540; }
+nav:hover .nav-links a:hover, nav.nav-solid .nav-links a:hover { color: var(--purple); }
 .nav-r{display:flex;align-items:center;gap:12px}
-.btn-lang{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#fff;padding:7px 14px;border-radius:8px;font-size:13px;cursor:pointer;font-family:inherit;transition:all 0.3s ease;}
-nav:hover .btn-lang, nav.nav-solid .btn-lang { background: transparent; border-color: rgba(0,0,0,0.1); color: #425466; }
-nav:hover .btn-lang:hover, nav.nav-solid .btn-lang:hover { background: rgba(0,0,0,0.03); color: #0a2540; }
-.btn-contact{background:linear-gradient(135deg,#1a0a3e,#2d0f5e);color:#fff;border:1px solid rgba(124,58,237,.5);padding:10px 22px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;font-family:inherit;box-shadow:0 0 24px rgba(124,58,237,.35);transition:box-shadow .3s}
-.btn-contact:hover{box-shadow:0 0 44px rgba(0,212,255,.4)}
+.btn-lang{background:transparent;border:1px solid rgba(255,255,255,0.2);color:var(--text);padding:7px 14px;border-radius:8px;font-size:13px;cursor:pointer;font-family:inherit;transition:all 0.3s ease;}
+nav:hover .btn-lang, nav.nav-solid .btn-lang { border-color: rgba(0,0,0,0.1); color: #0a2540; }
+nav:hover .btn-lang:hover, nav.nav-solid .btn-lang:hover { background: rgba(0,0,0,0.03); color: var(--purple); }
+.btn-contact{background:var(--purple);color:#fff;border:none;padding:10px 22px;border-radius:50px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;font-family:inherit;box-shadow:0 4px 14px rgba(124,58,237,0.3);transition:all .3s}
+.btn-contact:hover{box-shadow:0 6px 20px rgba(124,58,237,0.5);transform:translateY(-1px);}
 
 /* HERO */
 .hero{position:relative;width:100%;height:100vh;min-height:640px;overflow:hidden;display:flex;align-items:center}
@@ -158,15 +158,15 @@ h2{font-size:clamp(28px,3.2vw,48px);font-weight:800;line-height:1.15;letter-spac
 
 .btn-cta{background:linear-gradient(135deg,#0d0040,#1a0060);color:#fff;border:1px solid rgba(0,212,255,.35);padding:13px 32px;border-radius:50px;font-size:15px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:10px;font-family:inherit;box-shadow:0 0 28px rgba(0,212,255,.18);transition:box-shadow .3s;text-decoration:none}
 .btn-cta:hover{box-shadow:0 0 48px rgba(0,212,255,.4)}
-
 /* Footer */
-footer{background:var(--bg);border-top:1px solid rgba(255,255,255,.06);padding:38px 52px 26px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px}
-.fl{font-size:17px;font-weight:800;letter-spacing:2px}
-.fl b{background:linear-gradient(90deg,var(--cyan),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+footer{background:var(--bg);border-top:1px solid var(--border);padding:38px 52px 26px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px}
+.fl{font-size:20px;font-weight:800;letter-spacing:-1px;color:var(--text)}
+.fl b{color:var(--text)}
+.fc{font-size:13px;color:var(--text-light)}
 .flinks{display:flex;gap:22px;list-style:none}
-.flinks a{color:var(--g);text-decoration:none;font-size:13px;font-weight:500;transition:color .2s}
+.flinks a{color:var(--text-light);text-decoration:none;font-size:13px;font-weight:500;transition:color .2s}
 .flinks a:hover{color:#fff}
-.fcopy{width:100%;text-align:center;font-size:12px;color:rgba(122,133,153,.4);padding-top:14px;border-top:1px solid rgba(255,255,255,.06);margin-top:6px;font-weight:400}
+.fcopy{width:100%;text-align:center;font-size:12px;color:var(--text-light);padding-top:14px;border-top:1px solid rgba(0,0,0,0.05);margin-top:6px;font-weight:400}
 
 .r{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
 .r.v{opacity:1;transform:translateY(0)}
@@ -281,51 +281,31 @@ footer{background:var(--bg);border-top:1px solid rgba(255,255,255,.06);padding:3
   </div>
 </nav>
 
-<div class="hero">
-  <div class="hero-photo"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-grid"></div>
-
-
-
-
-
-  <div class="hero-content">
-    <h1>Innovate<br/><em>Without</em><br/>Limits</h1>
-    <p class="hero-sub">AIVATIKA engineers intelligent voice and chat AI systems built for real business impact — agents that work around the clock.</p>
-  </div>
+<div class="hero" style="min-height: 60vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding-top: 80px;">
+  <div class="eyebrow" style="justify-content:center">Proven Results</div>
+  <h1 style="font-size: clamp(36px, 4vw, 56px); font-weight: 800; margin-bottom: 24px; max-width: 800px; line-height: 1.1;">Real Impact in <em>Production</em></h1>
+  <p class="hero-sub" style="max-width: 600px; margin: 0 auto 40px auto;">See how we've helped companies slash costs and scale operations without adding headcount.</p>
 </div>
 <section class="dark r">
-  <div class="eyebrow">What We Build</div>
-  <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:44px">
-    <h2>AI That Works<br/>While You Sleep</h2>
-    <p style="color:var(--g);font-size:14px;max-width:250px;line-height:1.7;font-weight:400">Production-grade agents for voice, chat & automation.</p>
-  </div>
-  <div class="grid3">
-    <div class="card"><div class="c-no">01</div><div class="c-ico">🎙️</div><h3>Voice AI Agents</h3><p>Phone-capable AI with natural speech. Handle calls, qualify leads, and book appointments — 24/7.</p><div class="pills"><span class="pill">Vapi</span><span class="pill">ElevenLabs</span><span class="pill">Deepgram</span></div></div>
-    <div class="card"><div class="c-no">02</div><div class="c-ico">💬</div><h3>Chat AI Systems</h3><p>WhatsApp, web & app chatbots with RAG-powered memory, context awareness, and CRM integration.</p><div class="pills"><span class="pill">RAG</span><span class="pill">Supabase</span><span class="pill">WhatsApp</span></div></div>
-    <div class="card"><div class="c-no">03</div><div class="c-ico">⚡</div><h3>Workflow Automation</h3><p>End-to-end AI pipelines from ingestion to action. Replace repetitive work with self-running systems.</p><div class="pills"><span class="pill">FastAPI</span><span class="pill">Gemini</span><span class="pill">n8n</span></div></div>
-  </div>
-</section>
-
-<section class="r" style="text-align:center">
-  <div class="eyebrow" style="justify-content:center">How It Works</div>
-  <h2>From Idea to Live Agent<br/>in Days, Not Months</h2>
-  <p class="ssub" style="margin:0 auto">Most clients go live within 2 weeks.</p>
-  <div class="steps">
-    <div class="step"><div class="s-no">1</div><h3>Discovery Call</h3><p>We map your workflow and identify the highest-impact automation opportunities.</p></div>
-    <div class="s-arr">→</div>
-    <div class="step"><div class="s-no">2</div><h3>Custom Build</h3><p>Our engineers build the agent with the right LLM stack for your exact use case.</p></div>
-    <div class="s-arr">→</div>
-    <div class="step"><div class="s-no">3</div><h3>Deploy & Monitor</h3><p>Ship to production and iterate until the agent runs at peak efficiency.</p></div>
+  <div class="grid3" style="grid-template-columns: repeat(2, 1fr); max-width: 1000px; margin: 0 auto;">
+    <div class="card" style="padding: 40px;">
+        <h3 style="font-size: 24px; margin-bottom: 16px;">E-Commerce Support Automation</h3>
+        <p style="color:var(--text); font-weight:600; margin-bottom: 8px;">Problem: <span style="color:var(--text-light); font-weight:400;">Drowning in 500+ daily WISMO (Where is my order) tickets.</span></p>
+        <p style="color:var(--text); font-weight:600; margin-bottom: 8px;">Solution: <span style="color:var(--text-light); font-weight:400;">Deployed a custom RAG-powered chatbot integrated with Shopify and Zendesk.</span></p>
+        <p style="color:var(--text); font-weight:600; margin-bottom: 24px;">Result: <span style="color:var(--cyan); font-weight:700;">80% auto-resolution rate, saving $10k/mo.</span></p>
+    </div>
+    <div class="card" style="padding: 40px;">
+        <h3 style="font-size: 24px; margin-bottom: 16px;">B2B Lead Qualification Voice Agent</h3>
+        <p style="color:var(--text); font-weight:600; margin-bottom: 8px;">Problem: <span style="color:var(--text-light); font-weight:400;">Sales team wasting 20+ hours a week qualifying inbound leads.</span></p>
+        <p style="color:var(--text); font-weight:600; margin-bottom: 8px;">Solution: <span style="color:var(--text-light); font-weight:400;">Built a voice AI agent that calls inbound leads within 5 minutes, qualifies them, and books meetings.</span></p>
+        <p style="color:var(--text); font-weight:600; margin-bottom: 24px;">Result: <span style="color:var(--cyan); font-weight:700;">3x increase in qualified meetings booked.</span></p>
+    </div>
   </div>
 </section>
-
-
 
 <footer>
   <div class="fl"><b>Ai</b>VATIKA</div>
-  <ul class="flinks" style="list-style: none;">
+  <ul class="flinks" style="list-style: none; display: flex; gap: 22px;">
     <li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li>
     <li><a href="case-studies.html">Case Studies</a></li><li><a href="contact.html">Contact</a></li>
     <li style="display:flex; gap:14px; align-items:center;">
