@@ -227,7 +227,7 @@ footer{background:var(--bg);border-top:1px solid rgba(255,255,255,.06);padding:3
 
   <div class="hero-content">
     <h1>Innovate<br/><em>Without</em><br/>Limits</h1>
-    <p class="hero-sub">AIVATIKA engineers intelligent voice and chat AI systems built for real business impact — agents that work around the clock.</p>
+    <p class="hero-sub">AIVATIKA engineers intelligent voice and chat AI systems built for real business impact, agents that work around the clock.</p>
     <div class="hero-acts">
       <a href="#" class="btn-start">Get Started ↗</a>
       <div class="play">▶</div>

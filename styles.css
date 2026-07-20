@@ -1,7 +1,7 @@
 :root {
     --bg-deep: #06031A;
     --text-main: #FFFFFF;
-    --text-muted: #B4B9C8;
+    --text-muted: #A1A1AA;
     
     --purple-primary: #6E12FF;
     --purple-light: #A555FF;
@@ -23,7 +23,8 @@ body {
     background-color: var(--bg-deep);
     color: var(--text-main);
     font-family: var(--font-sans);
-    line-height: 1.5;
+    line-height: 1.7;
+    font-size: 18px;
     overflow-x: hidden;
 }
 
@@ -54,13 +55,13 @@ a {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 48px;
     align-items: center;
 }
 
 .nav-links a {
     color: var(--text-muted);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -204,11 +205,11 @@ a {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 84px;
+    font-size: 64px;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.15;
     margin-bottom: 50px;
-    letter-spacing: -1px;
+    letter-spacing: -0.04em;
 }
 
 .hero-bottom-row {
@@ -228,7 +229,7 @@ a {
     align-items: center;
     gap: 10px;
     background: var(--purple-primary);
-    padding: 16px 32px;
+    padding: 14px 28px;
     border-radius: 30px;
     font-weight: 600;
     font-size: 16px;
@@ -380,4 +381,12 @@ a {
     .hero-right {
         display: none;
     }
+}
+
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.04em;
+    line-height: 1.2;
+    margin-bottom: 24px;
 }

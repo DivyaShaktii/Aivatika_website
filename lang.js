@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    navProduct: "Products ▾", navHcBot: "ChatBot.aivatika.com", navFeature: "Features ▾", navSolution: "Solutions", navContact: "Contact", btnContact: "Contact US 💬",
-    heroTitle: "Innovate<br/><em>Without</em><br/>Limits", heroSub: "AIVATIKA engineers intelligent voice and chat AI systems built for real business impact — agents that work around the clock.", btnStart: "Get Started ↗",
+    navProduct: "Products ▾", navHcBot: "ChatBot.aivatika.com", navFeature: "Features ▾", navSolution: "Solutions", navContact: "Contact", btnContact: "Contact US ",
+    heroTitle: "Innovate<br/><em>Without</em><br/>Limits", heroSub: "AIVATIKA engineers intelligent voice and chat AI systems built for real business impact, agents that work around the clock.", btnStart: "Get Started ↗",
     stat1: "Requests Handled", stat2: "Happy Clients", stat3: "BRAND'S DIGITAL<br/>IDENTITY", explore: "Explore more ⓘ",
     s1Eyebrow: "What We Build", s1Title: "AI That Works<br/>While You Sleep", s1Sub: "Production-grade agents for voice, chat & automation.",
     c1Title: "Voice AI Agents", c1Desc: "Phone-capable AI with natural speech. Handle calls, qualify leads, and book appointments — 24/7.",
@@ -17,7 +17,7 @@ const translations = {
     fCopy: "© 2025 AIVATIKA · aivatika.com · Intelligent AI Products. Real Business Impact."
   },
   hi: {
-    navProduct: "उत्पाद ▾", navHcBot: "हेल्थकेयर बॉट", navFeature: "विशेषताएं ▾", navSolution: "समाधान", navContact: "संपर्क", btnContact: "संपर्क करें 💬",
+    navProduct: "उत्पाद ▾", navHcBot: "हेल्थकेयर बॉट", navFeature: "विशेषताएं ▾", navSolution: "समाधान", navContact: "संपर्क", btnContact: "संपर्क करें ",
     heroTitle: "बिना<br/><em>सीमाओं</em><br/>के नवाचार", heroSub: "AIVATIKA व्यावसायिक प्रभाव के लिए बुद्धिमान वॉयस और चैट AI सिस्टम का निर्माण करता है - चौबीसों घंटे काम करने वाले एजेंट।", btnStart: "शुरू करें ↗",
     stat1: "अनुरोध प्रबंधित", stat2: "संतुष्ट ग्राहक", stat3: "ब्रांड की डिजिटल<br/>पहचान", explore: "और जानें ⓘ",
     s1Eyebrow: "हम क्या बनाते हैं", s1Title: "AI जो आपके सोते<br/>समय भी काम करे", s1Sub: "वॉयस, चैट और ऑटोमेशन के लिए उत्पादन-स्तरीय एजेंट।",
@@ -34,7 +34,7 @@ const translations = {
     fCopy: "© 2025 AIVATIKA · aivatika.com · बुद्धिमान AI उत्पाद। वास्तविक व्यावसायिक प्रभाव।"
   },
   mr: {
-    navProduct: "उत्पादने ▾", navHcBot: "हेल्थकेअर बॉट", navFeature: "वैशिष्ट्ये ▾", navSolution: "उपाय", navContact: "संपर्क", btnContact: "आमच्याशी संपर्क साधा 💬",
+    navProduct: "उत्पादने ▾", navHcBot: "हेल्थकेअर बॉट", navFeature: "वैशिष्ट्ये ▾", navSolution: "उपाय", navContact: "संपर्क", btnContact: "आमच्याशी संपर्क साधा ",
     heroTitle: "मर्यादेशिवाय<br/><em>नवीनता</em><br/>आणा", heroSub: "AIVATIKA वास्तविक व्यावसायिक प्रभावासाठी तयार केलेल्या बुद्धिमान व्हॉइस आणि चॅट एआय सिस्टमची रचना करते - चोवीस तास काम करणारे एजंट.", btnStart: "सुरू करा ↗",
     stat1: "विनंत्या हाताळल्या", stat2: "समाधानी ग्राहक", stat3: "ब्रँडची डिजिटल<br/>ओळख", explore: "अधिक एक्सप्लोर करा ⓘ",
     s1Eyebrow: "आम्ही काय बनवतो", s1Title: "तुम्ही झोपतानाही<br/>काम करणारे AI", s1Sub: "व्हॉइस, चॅट आणि ऑटोमेशनसाठी उत्पादन-दर्जाचे एजंट.",
@@ -51,7 +51,7 @@ const translations = {
     fCopy: "© 2025 AIVATIKA · aivatika.com · बुद्धिमान AI उत्पादने. वास्तविक व्यावसायिक प्रभाव."
   },
   kn: {
-    navService: "ಸೇವೆ", navFeature: "ವೈಶಿಷ್ಟ್ಯಗಳು ▾", navSolution: "ಪರಿಹಾರಗಳು", navContact: "ಸಂಪರ್ಕ", btnContact: "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ 💬",
+    navService: "ಸೇವೆ", navFeature: "ವೈಶಿಷ್ಟ್ಯಗಳು ▾", navSolution: "ಪರಿಹಾರಗಳು", navContact: "ಸಂಪರ್ಕ", btnContact: "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ",
     heroTitle: "ಮಿತಿಗಳಿಲ್ಲದೆ<br/><em>ನಾವೀನ್ಯತೆ</em><br/>ತನ್ನಿ", heroSub: "AIVATIKA ನೈಜ ವ್ಯಾಪಾರ ಪ್ರಭಾವಕ್ಕಾಗಿ ನಿರ್ಮಿಸಲಾದ ಬುದ್ಧಿವಂತ ಧ್ವನಿ ಮತ್ತು ಚಾಟ್ AI ವ್ಯವಸ್ಥೆಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸುತ್ತದೆ - ಗಡಿಯಾರದ ಸುತ್ತ ಕೆಲಸ ಮಾಡುವ ಏಜೆಂಟ್‌ಗಳು.", btnStart: "ಪ್ರಾರಂಭಿಸಿ ↗",
     stat1: "ನಿರ್ವಹಿಸಿದ ವಿನಂತಿಗಳು", stat2: "ಸಂತುಷ್ಟ ಗ್ರಾಹಕರು", stat3: "ಬ್ರಾಂಡ್‌ನ ಡಿಜಿಟಲ್<br/>ಗುರುತು", explore: "ಇನ್ನಷ್ಟು ಅನ್ವೇಷಿಸಿ ⓘ",
     s1Eyebrow: "ನಾವು ಏನು ನಿರ್ಮಿಸುತ್ತೇವೆ", s1Title: "ನೀವು ಮಲಗಿರುವಾಗಲೂ<br/>ಕೆಲಸ ಮಾಡುವ AI", s1Sub: "ಧ್ವನಿ, ಚಾಟ್ ಮತ್ತು ಯಾಂತ್ರೀಕೃತಗೊಂಡಕ್ಕಾಗಿ ಉತ್ಪಾದನಾ-ಮಟ್ಟದ ಏಜೆಂಟ್‌ಗಳು.",
@@ -68,7 +68,7 @@ const translations = {
     fCopy: "© 2025 AIVATIKA · aivatika.com · ಬುದ್ಧಿವಂತ AI ಉತ್ಪನ್ನಗಳು. ನೈಜ ವ್ಯಾಪಾರ ಪ್ರಭಾವ."
   },
   es: {
-    navProduct: "Productos ▾", navHcBot: "Bot de Salud", navFeature: "Características ▾", navSolution: "Soluciones", navContact: "Contacto", btnContact: "Contáctenos 💬",
+    navProduct: "Productos ▾", navHcBot: "Bot de Salud", navFeature: "Características ▾", navSolution: "Soluciones", navContact: "Contacto", btnContact: "Contáctenos ",
     heroTitle: "Innovar<br/><em>Sin</em><br/>Límites", heroSub: "AIVATIKA diseña sistemas inteligentes de IA de voz y chat creados para un impacto comercial real: agentes que trabajan las 24 horas.", btnStart: "Empezar ↗",
     stat1: "Solicitudes manejadas", stat2: "Clientes felices", stat3: "IDENTIDAD DIGITAL<br/>DE LA MARCA", explore: "Explorar más ⓘ",
     s1Eyebrow: "Lo que construimos", s1Title: "IA que funciona<br/>mientras duermes", s1Sub: "Agentes de nivel de producción para voz, chat y automatización.",
@@ -85,7 +85,7 @@ const translations = {
     fCopy: "© 2025 AIVATIKA · aivatika.com · Productos de IA inteligentes. Impacto comercial real."
   },
   fr: {
-    navProduct: "Produits ▾", navHcBot: "Bot de Santé", navFeature: "Fonctionnalités ▾", navSolution: "Solutions", navContact: "Contact", btnContact: "Contactez-nous 💬",
+    navProduct: "Produits ▾", navHcBot: "Bot de Santé", navFeature: "Fonctionnalités ▾", navSolution: "Solutions", navContact: "Contact", btnContact: "Contactez-nous ",
     heroTitle: "Innover<br/><em>Sans</em><br/>Limites", heroSub: "AIVATIKA conçoit des systèmes d'IA vocale et de chat intelligents conçus pour un impact commercial réel - des agents qui travaillent 24h/24.", btnStart: "Commencer ↗",
     stat1: "Requêtes traitées", stat2: "Clients satisfaits", stat3: "IDENTITÉ NUMÉRIQUE<br/>DE LA MARQUE", explore: "Explorer plus ⓘ",
     s1Eyebrow: "Ce que nous construisons", s1Title: "Une IA qui travaille<br/>pendant que vous dormez", s1Sub: "Agents de qualité production pour la voix, le chat et l'automatisation.",
@@ -102,7 +102,7 @@ const translations = {
     fCopy: "© 2025 AIVATIKA · aivatika.com · Produits d'IA intelligents. Impact commercial réel."
   },
   de: {
-    navProduct: "Produkte ▾", navHcBot: "Gesundheits-Bot", navFeature: "Funktionen ▾", navSolution: "Lösungen", navContact: "Kontakt", btnContact: "Kontaktieren 💬",
+    navProduct: "Produkte ▾", navHcBot: "Gesundheits-Bot", navFeature: "Funktionen ▾", navSolution: "Lösungen", navContact: "Kontakt", btnContact: "Kontaktieren ",
     heroTitle: "Innovation<br/><em>Ohne</em><br/>Grenzen", heroSub: "AIVATIKA entwickelt intelligente Sprach- und Chat-KI-Systeme für echte geschäftliche Auswirkungen – Agenten, die rund um die Uhr arbeiten.", btnStart: "Loslegen ↗",
     stat1: "Anfragen bearbeitet", stat2: "Zufriedene Kunden", stat3: "DIGITALE IDENTITÄT<br/>DER MARKE", explore: "Mehr entdecken ⓘ",
     s1Eyebrow: "Was wir bauen", s1Title: "KI, die arbeitet,<br/>während Sie schlafen", s1Sub: "Produktionsreife Agenten für Sprache, Chat & Automatisierung.",
@@ -127,9 +127,9 @@ function changeLanguage(lang) {
 
   // Nav
   const links = document.querySelectorAll('.nav-links > li > a');
-  if(links.length >= 2) { 
-    links[0].innerText = t.navProduct; 
-    links[1].innerText = t.navSolution; 
+  if (links.length >= 2) {
+    links[0].innerText = t.navProduct;
+    links[1].innerText = t.navSolution;
   }
   document.querySelector('.btn-contact').innerText = t.btnContact;
 
@@ -139,7 +139,7 @@ function changeLanguage(lang) {
 
   // Eyebrows
   const eyebrows = document.querySelectorAll('.eyebrow');
-  if(eyebrows.length >= 4) {
+  if (eyebrows.length >= 4) {
     eyebrows[0].innerText = t.s1Eyebrow;
     eyebrows[1].innerText = t.s2Eyebrow;
     eyebrows[2].innerText = t.s3Eyebrow;
@@ -148,13 +148,13 @@ function changeLanguage(lang) {
 
   // Section 1
   const s1h2 = document.querySelector('section.dark.r h2');
-  if(s1h2) s1h2.innerHTML = t.s1Title;
+  if (s1h2) s1h2.innerHTML = t.s1Title;
   const s1p = document.querySelector('section.dark.r p');
-  if(s1p) s1p.innerText = t.s1Sub;
+  if (s1p) s1p.innerText = t.s1Sub;
 
   const cardsH3 = document.querySelectorAll('.card h3');
   const cardsP = document.querySelectorAll('.card p');
-  if(cardsH3.length >= 3) {
+  if (cardsH3.length >= 3) {
     cardsH3[0].innerText = t.c1Title;
     cardsH3[1].innerText = t.c2Title;
     cardsH3[2].innerText = t.c3Title;
@@ -165,13 +165,13 @@ function changeLanguage(lang) {
 
   // Section 2
   const s2h2 = document.querySelectorAll('section.r h2');
-  if(s2h2.length > 1) s2h2[1].innerHTML = t.s2Title;
+  if (s2h2.length > 1) s2h2[1].innerHTML = t.s2Title;
   const s2p = document.querySelectorAll('section.r p.ssub');
-  if(s2p.length > 0) s2p[0].innerText = t.s2Sub;
+  if (s2p.length > 0) s2p[0].innerText = t.s2Sub;
 
   const stepH3 = document.querySelectorAll('.step h3');
   const stepP = document.querySelectorAll('.step p');
-  if(stepH3.length >= 3) {
+  if (stepH3.length >= 3) {
     stepH3[0].innerText = t.step1Title;
     stepH3[1].innerText = t.step2Title;
     stepH3[2].innerText = t.step3Title;
@@ -181,20 +181,20 @@ function changeLanguage(lang) {
   }
 
   // Section 3
-  if(s2h2.length > 2) s2h2[2].innerHTML = t.s3Title;
-  if(s2p.length > 1) s2p[1].innerText = t.s3Sub;
+  if (s2h2.length > 2) s2h2[2].innerHTML = t.s3Title;
+  if (s2p.length > 1) s2p[1].innerText = t.s3Sub;
 
   // CTA Box
   const ctaH2 = document.querySelector('.cta-box h2');
-  if(ctaH2) ctaH2.innerText = t.ctaTitle;
+  if (ctaH2) ctaH2.innerText = t.ctaTitle;
   const ctaP = document.querySelector('.cta-box p');
-  if(ctaP) ctaP.innerText = t.ctaSub;
+  if (ctaP) ctaP.innerText = t.ctaSub;
   const ctaBtn = document.querySelector('.btn-cta');
-  if(ctaBtn) ctaBtn.innerText = t.ctaBtn;
+  if (ctaBtn) ctaBtn.innerText = t.ctaBtn;
 
   // Footer
   const fLinks = document.querySelectorAll('.flinks li a');
-  if(fLinks.length >= 5) {
+  if (fLinks.length >= 5) {
     fLinks[0].innerText = t.fLinks1;
     fLinks[1].innerText = t.fLinks2;
     fLinks[2].innerText = t.fLinks3;
@@ -202,5 +202,5 @@ function changeLanguage(lang) {
     fLinks[4].innerText = t.fLinks5;
   }
   const fCopy = document.querySelector('.fcopy');
-  if(fCopy) fCopy.innerText = t.fCopy;
+  if (fCopy) fCopy.innerText = t.fCopy;
 }
