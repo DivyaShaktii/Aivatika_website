@@ -226,6 +226,285 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:38px 52px
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #f8fafc;
+        font-family: 'Inter', sans-serif;
+        color: #0f172a;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        padding: 160px 24px 100px;
+        background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+    .hero-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+    }
+    .hero-content {
+        flex: 1;
+        max-width: 600px;
+        padding-top: 20px;
+    }
+    .hero-label {
+        display: inline-block;
+        padding: 6px 16px;
+        background: rgba(37, 99, 235, 0.1);
+        color: #2563EB;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .hero-section h1 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: #0f172a;
+    }
+    .hero-section p {
+        font-size: 20px;
+        color: #475569;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+    .btn-primary {
+        display: inline-block;
+        background: #10B981;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 16px 40px;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s;
+        box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+    }
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 30px -5px rgba(16, 185, 129, 0.5);
+    }
+
+    /* Workflow Section */
+    .workflow-section {
+        padding: 100px 24px;
+        background: #ffffff;
+    }
+    .section-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .section-header h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    .section-header p {
+        font-size: 18px;
+        color: #64748b;
+    }
+
+    .workflow-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .step-row {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+    .step-row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .step-content {
+        flex: 1;
+    }
+    .step-number {
+        font-size: 18px;
+        font-weight: 700;
+        color: #2563EB;
+        margin-bottom: 16px;
+        display: block;
+    }
+    .step-content h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #0f172a;
+    }
+    .step-content p {
+        font-size: 18px;
+        color: #475569;
+        line-height: 1.6;
+    }
+    .step-visual {
+        flex: 1;
+        background: #f1f5f9;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 20px 40px -10px rgba(0,0,0,0.05);
+        min-height: 360px;
+        overflow: hidden;
+    }
+    .step-visual img.step-img-full {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Features Grid */
+    .features-section {
+        padding: 100px 24px;
+        background: #f8fafc;
+    }
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+    .feature-card {
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        border: 1px solid #e2e8f0;
+        transition: all 0.3s;
+    }
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px -10px rgba(0,0,0,0.05);
+    }
+    .feature-icon {
+        width: 48px;
+        height: 48px;
+        background: rgba(16, 185, 129, 0.1);
+        color: #10B981;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    .feature-card h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    .feature-card p {
+        color: #64748b;
+        line-height: 1.6;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 120px 24px;
+        background: #0f172a;
+        text-align: center;
+        color: white;
+    }
+    .cta-section h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    .cta-section p {
+        font-size: 20px;
+        color: #94a3b8;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Hero Visual (Gallery Grid) */
+    .hero-visual {
+        flex: 1.2;
+    }
+    .hero-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .hero-gallery-item {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 4/5;
+        background: #1e293b;
+        box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15);
+    }
+    .hero-gallery-item:nth-child(even) {
+        transform: translateY(40px);
+    }
+    
+    .slider-track {
+        display: flex;
+        width: 300%;
+        height: 100%;
+        animation: swipe 9s infinite ease-in-out;
+    }
+    
+    @keyframes swipe {
+        0%, 25% { transform: translateX(0); }
+        33%, 58% { transform: translateX(-33.333%); }
+        66%, 91% { transform: translateX(-66.666%); }
+        100% { transform: translateX(0); }
+    }
+
+    .slider-track img {
+        width: 33.333%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero-gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        color: white;
+        pointer-events: none;
+    }
+    .hero-gallery-overlay span {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    @media (max-width: 992px) {
+        .hero-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero-gallery-item:nth-child(even) {
+            transform: translateY(0);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .hero-section h1 { font-size: 40px; }
+        .step-row, .step-row:nth-child(even) { flex-direction: column; gap: 40px; }
+        .step-visual { min-height: 250px; width: 100%; }
+    }
+</style>
 </head>
 <body>
 
@@ -304,139 +583,138 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:38px 52px
   </div>
 </nav>
 
-<div class="hero-light" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 120px 52px; max-width: 1400px; margin: 0 auto; gap: 60px;">
-  
-  <div class="hero-left" style="flex: 1; max-width: 500px;">
-    <div class="eyebrow" style="color: var(--purple); margin-bottom: 24px; letter-spacing: 2px;">
-      <span style="display: inline-block; width: 24px; height: 2px; background: var(--purple); margin-right: 12px; vertical-align: middle;"></span>
-      Intelligent Chat Automation
+<main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <!-- Left Side: Content -->
+            <div class="hero-content">
+                <span class="hero-label">NEW PRODUCT BY AIVATIKA</span>
+                <h1>Create Stunning AI Advertisements</h1>
+                <p>Transform simple product photos into studio-quality advertisement images instantly. No photoshoots, no editing skills required.</p>
+                <a href="https://your-deployed-website.com" target="_blank" class="btn-primary">Get Started For Free &rarr;</a>
+            </div>
+
+            <!-- Right Side: Gallery Results -->
+            <div class="hero-visual">
+                <div class="hero-gallery">
+                    <div class="hero-gallery-item">
+                        <div class="slider-track">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80" alt="Fashion Ad 1">
+                            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80" alt="Fashion Ad 2">
+                            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&q=80" alt="Fashion Ad 3">
+                        </div>
+                        <div class="hero-gallery-overlay">
+                            <span>Fashion & Apparel</span>
+                        </div>
+                    </div>
+                    <div class="hero-gallery-item">
+                        <div class="slider-track" style="animation-delay: -3s;">
+                            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600&q=80" alt="Cosmetics Ad 1">
+                            <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=600&q=80" alt="Cosmetics Ad 2">
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?w=600&q=80" alt="Cosmetics Ad 3" onerror="this.src='https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80'">
+                        </div>
+                        <div class="hero-gallery-overlay">
+                            <span>Beauty & Cosmetics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="workflow-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>How Pixtall Works</h2>
+                <p>Generate professional ad creatives in three simple steps.</p>
+            </div>
+
+            <div class="workflow-steps">
+                <!-- Step 1 -->
+                <div class="step-row">
+                    <div class="step-content">
+                        <span class="step-number">Step 01</span>
+                        <h3>Upload Product Image</h3>
+                        <p>Start by uploading a simple, clear photo of your product. Whether it's a t-shirt, a bottle, or an accessory, Pixtall's AI effortlessly isolates and prepares it.</p>
+                    </div>
+                    <div class="step-visual">
+                        <img class="step-img-full" src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80" alt="Sample Product Photo">
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-row">
+                    <div class="step-content">
+                        <span class="step-number">Step 02</span>
+                        <h3>Select a Human Model</h3>
+                        <p>Choose from our diverse library of AI-generated human models and characters. Find the perfect demographic and style to represent your brand's target audience.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div style="display: flex; gap: 16px;">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid #2563EB;">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid #e2e8f0;">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid #e2e8f0;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-row">
+                    <div class="step-content">
+                        <span class="step-number">Step 03</span>
+                        <h3>Generate Advertisement</h3>
+                        <p>Our advanced AI seamlessly blends your product with the chosen model, matching lighting and perspective to create a hyper-realistic, ready-to-publish advertisement.</p>
+                    </div>
+                    <div class="step-visual" style="background: url('https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&q=80') center/cover;">
+                        <!-- Simulated finished ad background -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Why Choose Pixtall?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Skip the weeks of planning a photoshoot. Get high-converting ad creatives generated in a matter of seconds.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    </div>
+                    <h3>Diverse Models</h3>
+                    <p>Access thousands of AI-generated human models representing every demographic to perfectly match your target audience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3>Cost-Effective</h3>
+                    <p>Drastically reduce marketing budgets by eliminating location fees, photographer costs, and modeling agency commissions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <div class="cta-box r">
+        <h2 style="margin-bottom: 20px;">Ready to scale your ad creatives?</h2>
+        <p style="font-size:15px; color:var(--g); max-width:500px; margin: 0 auto 40px; line-height: 1.7;">Join leading e-commerce brands using Pixtall to generate thousands of stunning product advertisements effortlessly.</p>
+        <a href="https://your-deployed-website.com" target="_blank" class="btn-cta">Get Started Now &rarr;</a>
     </div>
-    <h1 style="font-size: clamp(40px, 5vw, 64px); line-height: 1.1; margin-bottom: 24px; color: var(--text); font-weight: 800; letter-spacing: -1px;">
-      Transform customer engagement.
-    </h1>
-    <p style="font-size: 18px; line-height: 1.6; color: var(--text-light); margin-bottom: 40px;">
-      AI-powered chat systems that qualify leads, answer FAQs, and drive sales 24/7 without human intervention.
-    </p>
-    <div style="display: flex; gap: 16px;">
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@aivatika.com&body=Heyy%20I%20want%20your%20intelligent%20chat%20automation%20for%20my%20company" target="_blank" class="btn-contact" style="padding: 14px 28px; font-size: 15px; text-decoration: none;">Get Started</a>
-      <a href="#" class="btn-contact" style="background: transparent; color: var(--text); box-shadow: none; border: 1px solid var(--border); text-decoration: none;">Read Docs</a>
-    </div>
-  </div>
-
-  <div class="hero-right" style="flex: 1.2; width: 100%; position: relative;">
-    <style>
-      .chat-container {
-        --loop-duration: 12s;
-      }
-      @keyframes fadeUpIn {
-        0%, 100% { opacity: 0; transform: translateY(15px); }
-        8%, 85% { opacity: 1; transform: translateY(0); }
-        95% { opacity: 0; transform: translateY(-15px); }
-      }
-      
-      .msg-1 {
-        opacity: 0;
-        animation: fadeUpIn var(--loop-duration) infinite;
-      }
-
-      @keyframes userTyping {
-        0%, 15%, 28%, 100% { opacity: 0; visibility: hidden; transform: translateY(10px); }
-        18%, 25% { opacity: 1; visibility: visible; transform: translateY(0); }
-      }
-      .typing-user {
-        animation: userTyping var(--loop-duration) infinite;
-        position: absolute; right: 0; top: 80px;
-      }
-
-      @keyframes fadeUpIn2 {
-        0%, 28%, 100% { opacity: 0; transform: translateY(15px); }
-        32%, 85% { opacity: 1; transform: translateY(0); }
-        95% { opacity: 0; transform: translateY(-15px); }
-      }
-      .msg-2 {
-        opacity: 0;
-        animation: fadeUpIn2 var(--loop-duration) infinite;
-      }
-
-      @keyframes aiTyping {
-        0%, 38%, 52%, 100% { opacity: 0; visibility: hidden; transform: translateY(10px); }
-        42%, 49% { opacity: 1; visibility: visible; transform: translateY(0); }
-      }
-      .typing-ai {
-        animation: aiTyping var(--loop-duration) infinite;
-        position: absolute; left: 0; top: 150px;
-      }
-
-      @keyframes fadeUpIn3 {
-        0%, 52%, 100% { opacity: 0; transform: translateY(15px); }
-        56%, 85% { opacity: 1; transform: translateY(0); }
-        95% { opacity: 0; transform: translateY(-15px); }
-      }
-      .msg-3 {
-        opacity: 0;
-        animation: fadeUpIn3 var(--loop-duration) infinite;
-      }
-
-      @keyframes typingDot {
-        0%, 20% { transform: translateY(0); }
-        50% { transform: translateY(-3px); }
-        80%, 100% { transform: translateY(0); }
-      }
-      .typing-indicator {
-        display: flex; gap: 4px; padding: 12px 16px; background: rgba(255,255,255,0.05); border-radius: 16px; width: fit-content; 
-      }
-      .typing-indicator.left { border-bottom-left-radius: 4px; border: 1px solid var(--border); }
-      .typing-indicator.right { border-bottom-right-radius: 4px; background: var(--purple); margin-left: auto; box-shadow: 0 4px 12px rgba(124,58,237,0.25); }
-      .typing-indicator.right .dot { background: rgba(255,255,255,0.7); }
-      
-      .dot { width: 6px; height: 6px; background: #aab7c4; border-radius: 50%; }
-      .dot:nth-child(1) { animation: typingDot 1.4s infinite linear; }
-      .dot:nth-child(2) { animation: typingDot 1.4s infinite linear 0.2s; }
-      .dot:nth-child(3) { animation: typingDot 1.4s infinite linear 0.4s; }
-      
-      .chat-bubble { padding: 14px 18px; border-radius: 18px; font-size: 14px; line-height: 1.5; max-width: 85%; font-weight: 500;}
-      .bot-bubble { background: rgba(255,255,255,0.05); color: var(--text); border-bottom-left-radius: 4px; border: 1px solid var(--border); }
-      .user-bubble { background: var(--purple); color: #fff; border-bottom-right-radius: 4px; margin-left: auto; box-shadow: 0 4px 12px rgba(124,58,237,0.25);}
-      
-      /* CSS Fake Crop - Adjust size and crop amount here */
-      /* Simple Image Styling */
-      .whatsapp-mockup-img {
-        width: 100%;
-        max-width: 650px;
-        height: auto;
-        border-radius: 8px; /* Sharp, clean edges like a real screen */
-        display: block;
-        margin: 0 auto;
-        box-shadow: 0 25px 50px rgba(0,0,0,0.6); 
-      }
-    </style>
-    <img src="whatsapp_image2.png" class="whatsapp-mockup-img" alt="AI Chat Demo on Laptop" />
-    <!-- Decorative elements -->
-    <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(99,91,255,0.1) 0%, transparent 70%); z-index: -1;"></div>
-    <div style="position: absolute; bottom: -80px; left: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(0,212,255,0.1) 0%, transparent 70%); z-index: -1;"></div>
-  </div>
-
-</div>
-
-<!-- Video Placeholder Section -->
-<section style="padding: 40px 5%; background: var(--bg); text-align: center; min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
-  <h2 style="font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 16px;">See How It Works</h2>
-  <p style="color: var(--text-light); font-size: 18px; margin-bottom: 24px;">Watch our intelligent chat automation in action.</p>
-  
-  <div style="width: 100%; max-width: 800px; margin: 0 auto; background: #0b0e24; border: 1px solid var(--border); border-radius: 24px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.6); overflow: hidden;">
-    
-    <!-- Optional background pattern for the placeholder -->
-    <div style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.3;"></div>
-    
-    <!-- Play button icon -->
-    <div style="width: 80px; height: 80px; background: var(--purple); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; z-index: 2; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 10px 30px rgba(124,58,237,0.4);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 15px 40px rgba(124,58,237,0.6)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 30px rgba(124,58,237,0.4)';">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" stroke="none"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
-    </div>
-    
-    <div style="position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; color: var(--text-light); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">Video Placeholder</div>
-  </div>
-</section>
-
+</main>
 <footer>
     <div class="fl"><b>Ai</b>VATIKA</div>
     <ul class="flinks">
