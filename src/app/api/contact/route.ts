@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const CONTACT_RECEIVER_EMAIL = process.env.CONTACT_RECEIVER_EMAIL || 'test@example.com';
-const SENDER_EMAIL = process.env.SENDER_EMAIL || 'noreply@aivatika.com';
-
 export async function POST(request: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const CONTACT_RECEIVER_EMAIL = process.env.CONTACT_RECEIVER_EMAIL || 'test@example.com';
+    const SENDER_EMAIL = process.env.SENDER_EMAIL || 'noreply@aivatika.com';
+
     const body = await request.json();
     const { name, email, company, phone, subject, message } = body;
 
@@ -27,12 +27,15 @@ export async function POST(request: Request) {
       <p><em>Submitted At: ${timestamp}</em></p>
     `;
 
-    await resend.emails.send({
+    const businessEmail = await resend.emails.send({
       from: SENDER_EMAIL,
       to: CONTACT_RECEIVER_EMAIL,
       subject: `New Contact Submission: ${subject || name}`,
       html: businessHtml,
     });
+    if (businessEmail.error) {
+      throw new Error(businessEmail.error.message);
+    }
 
     // 2. Auto-Reply to Customer
     const customerHtml = `
@@ -47,21 +50,24 @@ export async function POST(request: Request) {
       </div>
     `;
 
-    await resend.emails.send({
+    const customerEmail = await resend.emails.send({
       from: SENDER_EMAIL,
       to: email,
       subject: "Thanks for contacting us",
       html: customerHtml,
     });
+    if (customerEmail.error) {
+      throw new Error(customerEmail.error.message);
+    }
 
     return NextResponse.json({
       success: true,
       message: "Thank you for contacting us. We will get back to you soon."
     });
-  } catch (error) {
-    console.error("Error sending email:", error);
+  } catch (error: any) {
+    console.error("Error sending email:", error?.message || error);
     return NextResponse.json(
-      { error: "An error occurred while sending the message." },
+      { error: error?.message || "An error occurred while sending the message." },
       { status: 500 }
     );
   }
