@@ -1,0 +1,48 @@
+{
+  "id": "a0e7deea",
+  "phase": "discarded",
+  "pageUrl": "/",
+  "sourceFile": "frontend/src/app/page.tsx",
+  "previewFile": null,
+  "previewMode": null,
+  "expectedVariants": 3,
+  "arrivedVariants": 3,
+  "visibleVariant": 1,
+  "paramValues": {},
+  "pendingEventSeq": null,
+  "pendingEvent": null,
+  "deliveryLease": null,
+  "checkpointRevision": 7,
+  "browserCheckpointRevision": 7,
+  "publicationCheckpointRevision": 0,
+  "activeOwner": "011aba37",
+  "sourceMarkers": {},
+  "fallbackMode": null,
+  "generationPhase": "generation_ready",
+  "generationCompletedAt": 1784975357938,
+  "generationTimings": {
+    "picked_up": {
+      "at": 1784975280265,
+      "durationMs": null
+    },
+    "scaffolding": {
+      "at": 1784975280265,
+      "durationMs": null
+    },
+    "source_ready": {
+      "at": 1784975280362,
+      "durationMs": 93.58979200012982
+    },
+    "generation_ready": {
+      "at": 1784975280365,
+      "durationMs": null
+    }
+  },
+  "variantPlan": null,
+  "generationCanceled": true,
+  "generationCanceledAt": 1784975429602,
+  "cancelReason": "discard",
+  "annotationArtifacts": [],
+  "diagnostics": [],
+  "updatedAt": "2026-07-25T10:30:29.949Z"
+}

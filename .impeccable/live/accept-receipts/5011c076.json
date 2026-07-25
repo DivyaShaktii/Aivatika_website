@@ -1,0 +1,12 @@
+{
+  "id": "5011c076",
+  "operation": "accept",
+  "variantId": "3",
+  "result": {
+    "handled": true,
+    "file": "frontend/src/app/page.tsx",
+    "carbonize": true,
+    "todo": "REQUIRED before next poll: carbonize cleanup in frontend/src/app/page.tsx. See reference/live.md \"Required after accept\"."
+  },
+  "completedAt": "2026-07-25T09:02:44.799Z"
+}

@@ -1,41 +1,41 @@
-# Dependencies
-node_modules/
-frontend/node_modules/
-frontend/.next/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Python
-backend/venv/
-backend/__pycache__/
-__pycache__/
-*.pyc
-*.pyo
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Environment variables (secrets)
-.env
-backend/.env
+# testing
+/coverage
 
-# OS files
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
-Thumbs.db
+*.pem
 
-# IDE
-.vscode/
-.idea/
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Impeccable / Agent tooling
-.impeccable/
-.agents/
-skills-lock.json
+# env files (can opt-in for committing if needed)
+.env*
 
-# Root-level legacy/scratch images (already in frontend/public)
-invoice_dashboard.png
-orb_graphic.png
-whatsapp_image2.png
+# vercel
+.vercel
 
-# Lock files at project root (not meaningful)
-package-lock.json
-
-# Agent docs
-CLAUDE.md
-frontend/CLAUDE.md
-frontend/AGENTS.md
+# typescript
+*.tsbuildinfo
+next-env.d.ts

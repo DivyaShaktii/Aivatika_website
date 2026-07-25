@@ -1,0 +1,12 @@
+{
+  "id": "9c339815",
+  "operation": "accept",
+  "variantId": "2",
+  "result": {
+    "handled": true,
+    "file": "frontend/src/components/Footer.tsx",
+    "carbonize": true,
+    "todo": "REQUIRED before next poll: carbonize cleanup in frontend/src/components/Footer.tsx. See reference/live.md \"Required after accept\"."
+  },
+  "completedAt": "2026-07-25T09:40:34.769Z"
+}
