@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+frontend/.next/
+
+# Python
+backend/venv/
+backend/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables (secrets)
+.env
+backend/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Impeccable / Agent tooling
+.impeccable/
+.agents/
+skills-lock.json
+
+# Root-level legacy/scratch images (already in frontend/public)
+invoice_dashboard.png
+orb_graphic.png
+whatsapp_image2.png
+
+# Lock files at project root (not meaningful)
+package-lock.json
+
+# Agent docs
+CLAUDE.md
+frontend/CLAUDE.md
+frontend/AGENTS.md
