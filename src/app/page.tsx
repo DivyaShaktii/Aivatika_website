@@ -2,6 +2,9 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const HeroRobot = dynamic(() => import('../components/HeroRobot'), { ssr: false });
 
 export default function Home() {
   const containerRef = useRef<HTMLElement>(null);
@@ -64,9 +67,8 @@ export default function Home() {
                     <div className="hero-graphic" style={{ width: '600px', height: '600px', margin: '0 auto' }}>
 
                     <div className="orb-container" style={{ width: '100%', height: '100%', position: 'relative' }}>
-                        <div className="glow-ring"></div>
-                        <div className="orb" style={{ width: '100%', height: '100%', position: 'relative', borderRadius: '50%', zIndex: 2 }}>
-                            <img src="/assets/tech-neural-core.png" alt="Neural Core" className="tech-img" />
+                        <div className="orb-wrapper" style={{ width: '100%', height: '100%', position: 'relative', borderRadius: '50%', zIndex: 2 }}>
+                            <HeroRobot />
                         </div>
                         <div className="floating-badge" style={{ top: '20%', left: '0%', bottom: 'auto' }}>
                             <span style={{ color: '#33ff99' }}>●</span> WhatsApp Automation

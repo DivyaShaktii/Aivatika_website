@@ -419,37 +419,3 @@ footer { padding: 6rem 4rem 2rem; max-width: 100%; margin: 0 auto; }
 }
 .hero-title .word { display: inline-block; }
 
-img.earth-globe {
-  width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;
-  animation: globe-spin-slow 40s linear infinite;
-  filter: contrast(1.1) brightness(1.1) drop-shadow(0 0 30px rgba(204,255,0,0.3));
-}
-@keyframes globe-spin-slow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.orb-container {
-  animation: globe-float 8s ease-in-out infinite;
-}
-.orb {
-  animation: globe-spin-2d 40s linear infinite;
-}
-.orb-container .tech-img {
-  width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
-  filter: brightness(1.2) drop-shadow(0 0 40px rgba(51,255,153,0.5));
-}
-@keyframes globe-spin-2d {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.orb-container .glow-ring {
-  position: absolute; width: 130%; height: 130%; top: -15%; left: -15%;
-  border-radius: 50%; border: 2px solid rgba(51,255,153,0.3);
-  box-shadow: 0 0 20px rgba(51,255,153,0.2), inset 0 0 20px rgba(51,255,153,0.2);
-  animation: pulse-ring 4s ease-in-out infinite; pointer-events: none;
-}
-@keyframes pulse-ring {
-  0%, 100% { transform: scale(1); opacity: 0.8; }
-  50% { transform: scale(1.05); opacity: 0.4; }
-}
