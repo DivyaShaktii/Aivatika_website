@@ -64,7 +64,7 @@ export default function Home() {
                 </div>
 
                 <div className="hero-right">
-                    <div className="hero-graphic" style={{ width: '600px', height: '600px', margin: '0 auto' }}>
+                    <div className="hero-graphic" style={{ width: '800px', height: '800px', margin: '0 auto' }}>
 
                     <div className="orb-container" style={{ width: '100%', height: '100%', position: 'relative' }}>
                         <div className="orb-wrapper" style={{ width: '100%', height: '100%', position: 'relative', borderRadius: '50%', zIndex: 2 }}>
