@@ -1,11 +1,21 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    const CONTACT_RECEIVER_EMAIL = process.env.CONTACT_RECEIVER_EMAIL || 'test@example.com';
-    const SENDER_EMAIL = process.env.SENDER_EMAIL || 'noreply@aivatika.com';
+    const SENDER_EMAIL = process.env.SENDER_EMAIL || 'chatrapatirajashekar1.618@gmail.com';
+    const SENDER_EMAIL_PASSWORD = (process.env.SENDER_EMAIL_PASSWORD || 'ffrxnqpwukuinfcz').replace(/\s+/g, '');
+    const CONTACT_RECEIVER_EMAIL = process.env.CONTACT_RECEIVER_EMAIL || SENDER_EMAIL;
+
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: SENDER_EMAIL,
+        pass: SENDER_EMAIL_PASSWORD,
+      },
+    });
 
     const body = await request.json();
     const { name, email, company, phone, subject, message } = body;
@@ -27,15 +37,12 @@ export async function POST(request: Request) {
       <p><em>Submitted At: ${timestamp}</em></p>
     `;
 
-    const businessEmail = await resend.emails.send({
-      from: SENDER_EMAIL,
+    await transporter.sendMail({
+      from: `"AIVatika Contact" <${SENDER_EMAIL}>`,
       to: CONTACT_RECEIVER_EMAIL,
       subject: `New Contact Submission: ${subject || name}`,
       html: businessHtml,
     });
-    if (businessEmail.error) {
-      throw new Error(businessEmail.error.message);
-    }
 
     // 2. Auto-Reply to Customer
     const customerHtml = `
@@ -50,15 +57,12 @@ export async function POST(request: Request) {
       </div>
     `;
 
-    const customerEmail = await resend.emails.send({
-      from: SENDER_EMAIL,
+    await transporter.sendMail({
+      from: `"AIVatika Team" <${SENDER_EMAIL}>`,
       to: email,
       subject: "Thanks for contacting us",
       html: customerHtml,
     });
-    if (customerEmail.error) {
-      throw new Error(customerEmail.error.message);
-    }
 
     return NextResponse.json({
       success: true,
@@ -72,3 +76,4 @@ export async function POST(request: Request) {
     );
   }
 }
+
