@@ -24,10 +24,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-      {/* impeccable-live-start */}
-<script src="http://localhost:8402/live.js?token=d2eebc3c-74cf-466c-96f2-4dc201e940e9"></script>
-{/* impeccable-live-end */}
-</body>
+      </body>
     </html>
   );
 }
