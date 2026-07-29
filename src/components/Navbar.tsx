@@ -41,10 +41,6 @@ export default function Navbar() {
             </button>
 
             <div className="products-menu">
-              <a href="https://examscalendar.com/" target="_blank" rel="noopener noreferrer" className="product-item">
-                <div className="title">ExamsCalendar</div>
-                <div className="desc">It helps you in exam preparation</div>
-              </a>
 
               <Link href="/chat-automation" className="product-item">
                 <div className="title">WhatsApp Bot</div>

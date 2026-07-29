@@ -90,14 +90,12 @@ export default function Home() {
                     <div className="ticker-content">
                         <div className="client-logo">INTELLIGENT CHAT AUTOMATION</div>
                         <div className="client-logo">PIXTALL</div>
-                        <div className="client-logo">EXAMSCALENDAR</div>
                         <div className="client-logo">INVOICE AUTOMATION</div>
                         <div className="client-logo">WHATSAPP HEALTH CARE AUTOMATION</div>
                     </div>
                     <div className="ticker-content">
                         <div className="client-logo">INTELLIGENT CHAT AUTOMATION</div>
                         <div className="client-logo">PIXTALL</div>
-                        <div className="client-logo">EXAMSCALENDAR</div>
                         <div className="client-logo">INVOICE AUTOMATION</div>
                         <div className="client-logo">WHATSAPP HEALTH CARE AUTOMATION</div>
                     </div>
@@ -110,17 +108,6 @@ export default function Home() {
             <h2 className="section-title">AI products built for <span className="italic">modern execution.</span></h2>
 
             <div className="bento-grid">
-                <div className="bento-card reveal">
-                    <div className="card-glow"></div>
-                    <div className="card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                    </div>
-                    <h3>ExamsCalendar</h3>
-                    <p>It helps you in exam preparation. Stay ahead with intelligent scheduling, real-time alerts, and comprehensive exam tracking automated for students and institutions.</p>
-                    <div className="card-tags">
-                        <span>EXAM PREP</span><span>SCHEDULING</span><span>ALERTS</span><span>AUTOMATION</span>
-                    </div>
-                </div>
 
                 <div className="bento-card reveal">
                     <div className="card-icon">
