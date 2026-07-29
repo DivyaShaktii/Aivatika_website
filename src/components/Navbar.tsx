@@ -42,14 +42,14 @@ export default function Navbar() {
 
             <div className="products-menu">
 
-              <Link href="/chat-automation" className="product-item">
-                <div className="title">WhatsApp Bot</div>
-                <div className="desc">Automate customer interactions</div>
-              </Link>
-
               <Link href="/contact" className="product-item">
                 <div className="title">Pixtall</div>
                 <div className="desc">Generate advertisement images with AI</div>
+              </Link>
+
+              <Link href="/chat-automation" className="product-item">
+                <div className="title">WhatsApp Bot</div>
+                <div className="desc">Automate customer interactions</div>
               </Link>
             </div>
           </div>
