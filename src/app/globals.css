@@ -101,6 +101,38 @@ p { color: var(--text-secondary); }
     display: block;
 }
 
+.nested-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.nested-menu {
+    position: absolute;
+    top: -12px;
+    left: calc(100% + 5px);
+    width: 280px;
+    display: none;
+    background: #0D0F12;
+    border-radius: 18px;
+    border: 1px solid rgba(204, 255, 0, 0.15);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65);
+    padding: 0.75rem;
+    z-index: 100000;
+}
+
+.nested-menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 15px;
+    height: 100%;
+}
+
+.nested-dropdown:hover .nested-menu {
+    display: block;
+}
+
 .product-item {
     display: flex;
     flex-direction: column;
