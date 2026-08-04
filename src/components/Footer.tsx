@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <div className="footer-col">
           <h4>PRODUCTS</h4>
-          <a href="https://examscalendar.com/" target="_blank" rel="noopener noreferrer">ExamsCalendar</a>
+
           <Link href="/contact">Pixtall</Link>
           <Link href="/chat-automation">WhatsApp Automation</Link>
         </div>

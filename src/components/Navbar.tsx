@@ -41,20 +41,37 @@ export default function Navbar() {
             </button>
 
             <div className="products-menu">
-              <a href="https://examscalendar.com/" target="_blank" rel="noopener noreferrer" className="product-item">
-                <div className="title">ExamsCalendar</div>
-                <div className="desc">It helps you in exam preparation</div>
-              </a>
 
-              <Link href="/chat-automation" className="product-item">
-                <div className="title">WhatsApp Bot</div>
-                <div className="desc">Automate customer interactions</div>
-              </Link>
-
-              <Link href="/contact" className="product-item">
+              <a href="https://www.pixtall.com/" target="_blank" rel="noopener noreferrer" className="product-item">
                 <div className="title">Pixtall</div>
                 <div className="desc">Generate advertisement images with AI</div>
-              </Link>
+              </a>
+
+              <a href="https://chatbot.aivatika.com/" target="_blank" rel="noopener noreferrer" className="product-item">
+                <div className="title">WhatsApp Bot</div>
+                <div className="desc">Automate customer interactions</div>
+              </a>
+
+              <div className="product-item nested-dropdown">
+                <div className="title" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  Others
+                  <svg width="14" height="14" viewBox="0 0 24 24">
+                    <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  </svg>
+                </div>
+                <div className="desc">Explore more tools and services</div>
+                
+                <div className="nested-menu">
+                  <a href="https://examscalendar.com/" target="_blank" rel="noopener noreferrer" className="product-item">
+                    <div className="title">ExamsCalendar</div>
+                    <div className="desc">Intelligent exam preparation and scheduling</div>
+                  </a>
+                  <a href="#" className="product-item">
+                    <div className="title">Learn Chess</div>
+                    <div className="desc">Master chess with AI opponents</div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
