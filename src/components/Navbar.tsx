@@ -42,15 +42,15 @@ export default function Navbar() {
 
             <div className="products-menu">
 
-              <Link href="/contact" className="product-item">
+              <a href="https://www.pixtall.com/" target="_blank" rel="noopener noreferrer" className="product-item">
                 <div className="title">Pixtall</div>
                 <div className="desc">Generate advertisement images with AI</div>
-              </Link>
+              </a>
 
-              <Link href="/chat-automation" className="product-item">
+              <a href="https://whatsappfrontend-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className="product-item">
                 <div className="title">WhatsApp Bot</div>
                 <div className="desc">Automate customer interactions</div>
-              </Link>
+              </a>
 
               <div className="product-item nested-dropdown">
                 <div className="title" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
