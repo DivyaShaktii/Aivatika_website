@@ -47,7 +47,7 @@ export default function Navbar() {
                 <div className="desc">Generate advertisement images with AI</div>
               </a>
 
-              <a href="https://whatsappfrontend-production.up.railway.app/" target="_blank" rel="noopener noreferrer" className="product-item">
+              <a href="https://chatbot.aivatika.com/" target="_blank" rel="noopener noreferrer" className="product-item">
                 <div className="title">WhatsApp Bot</div>
                 <div className="desc">Automate customer interactions</div>
               </a>
